@@ -9,6 +9,8 @@ from utils.help_handler import HelpMenuHandler
 # turn off logging for webdriver manager
 os.environ['WDM_LOG_LEVEL'] = '0'
 
+load_dotenv()
+
 # parse environment variables
 token = os.getenv('DISCORD_TOKEN')
 discord_env = os.getenv('DISCORD_ENV')
